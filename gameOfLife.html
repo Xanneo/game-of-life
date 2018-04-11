@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Game Of Life</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+table{
+	border-style: solid;
+	margin-right: auto;
+	margin-left: auto;
+	empty-cells: show;
+
+}
+td{
+	border-style: dashed;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	display: inline-grid;
+}
+div{
+	text-align: center;
+}
+p{
+	text-align: center;
+
+}
+input{
+	width: 20px;
+}
+button{
+	margin-left: 20px;
+}
+</style>
+</head>
+
+<body>
+<script src="gameOfLife.js"></script>
+<p id="gen"></p>
+<div>
+<button onclick="randomizeOnClick()">Randomize Grid</button>
+<button onclick="oneGen()">One Generation</button>
+<button onclick="twentyThree()">23 Generations</button>
+<button onclick="gameStart()">Start</button>
+<button onclick="gamePause()">Pause</button>
+<button onclick="clearGrid()">Clear</button>
+<div>
+</body>
+</html>
